@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Empleados / Cargos</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery-ui.min.js"></script>
+
+    <script>
+        // Funcion para validar fechas dd/mm/yy
+        $(function () {
+            $.validator.addMethod('date',
+            function (value, element) {
+                if (this.optional(element)) {
+                    return true;
+                }
+                var ok = true;
+                try {
+                    $.datepicker.parseDate('dd/mm/yy', value);
+                }
+                catch (err) {
+                    ok = false;
+                }
+                return ok;
+            });
+            $(".datefield").datepicker({ dateFormat: 'dd/mm/yy', changeYear: true });
+        });
+
+        //Funcion para modificar el datepicker a español
+        $(function () {
+            $.datepicker.setDefaults(
+              $.extend($.datepicker.regional['es'] = {
+                  closeText: 'Cerrar',
+                  prevText: '<Ant',
+                  nextText: 'Sig>',
+                  currentText: 'Hoy',
+                  monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+                  monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                  dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+                  dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié', 'Juv', 'Vie', 'Sáb'],
+                  dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+                  weekHeader: 'Sm',
+                  dateFormat: 'dd/mm/yy',
+                  firstDay: 1,
+                  isRTL: false,
+                  showMonthAfterYear: false,
+                  yearSuffix: ''
+              }, { changeMonth: true }, { changeYear: true }, { yearRange: "1945:2000" })
+            );
+            
+            $('#datepicker').datepicker();
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    @Html.ActionLink("Empleados / Cargos", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+            </div>
+        </div>
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer></footer>
+        </div>
+    </div>
+
+    <div class="save-box" id="save-box" style="display:none">
+        <div id="info-empleado">
+            @* Cargar info del empleado *@
+        </div>
+    </div>
+
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

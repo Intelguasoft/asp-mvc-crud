@@ -1,0 +1,10 @@
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\bin\Release\EmpleadosCargos.Core.dll
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\bin\Release\EmpleadosCargos.Core.pdb
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\obj\Release\EmpleadosCargos.Core.csprojResolveAssemblyReference.cache
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\obj\Release\EmpleadosCargos.Core.dll
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\obj\Release\EmpleadosCargos.Core.pdb
+C:\Users\HernanMartin\Documents\Proyectos\EmpleadosCargos\EmpleadosCargos.Core\bin\Release\EmpleadosCargos.Core.dll
+C:\Users\HernanMartin\Documents\Proyectos\EmpleadosCargos\EmpleadosCargos.Core\bin\Release\EmpleadosCargos.Core.pdb
+C:\Users\HernanMartin\Documents\Proyectos\EmpleadosCargos\EmpleadosCargos.Core\obj\Release\EmpleadosCargos.Core.csprojResolveAssemblyReference.cache
+C:\Users\HernanMartin\Documents\Proyectos\EmpleadosCargos\EmpleadosCargos.Core\obj\Release\EmpleadosCargos.Core.dll
+C:\Users\HernanMartin\Documents\Proyectos\EmpleadosCargos\EmpleadosCargos.Core\obj\Release\EmpleadosCargos.Core.pdb

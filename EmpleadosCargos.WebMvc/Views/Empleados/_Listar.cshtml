@@ -1,0 +1,56 @@
+﻿@model IEnumerable<EmpleadosCargos.Core.Empleado>
+
+<h2>Lista de Empleados</h2>
+
+<table class="table table-striped">
+    <tr>
+        <th style="display: none">
+           
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            Cargo
+        </th>
+        <th>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td style="display: none">
+                @Html.DisplayFor(modelItem => item.EmpleadoID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo.Nombre)
+            </td>
+            <td>
+                <a href="#" class="btn btn-info" onclick="cargarPopUp('/Empleados/Detalles', @item.EmpleadoID);">
+                    <span class="glyphicon glyphicon-list-alt"></span> Detalles
+                </a>
+                <a href="#" class="btn btn-danger" onclick="cargarPopUp('/Empleados/Eliminar', @item.EmpleadoID);">
+                    <span class="glyphicon glyphicon-trash"></span> Eliminar
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+<script type="text/javascript">
+    function cargarPopUp($controllerAction, $routeValues) {
+        $('.wrapper').addClass('blur');
+        $('#save-box').show();
+        $("#info-empleado").load($controllerAction, jQuery.param({ id: $routeValues }));
+    }
+</script>

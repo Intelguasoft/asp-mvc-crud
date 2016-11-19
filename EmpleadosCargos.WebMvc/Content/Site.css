@@ -1,0 +1,65 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    #panel1 {
+        width: 45%;
+        margin-right: 5%;
+        float: left;
+    } 
+
+    #panel2 {
+        width: 45%;
+        margin-left: 5%;
+        float: left;
+    }
+}
+
+.form-horizontal hr {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.form-horizontal .control-label, .dl-horizontal dt {
+    text-align: left !important;
+}
+
+.save-box {
+    width: 50%;
+    background: #fff;
+    padding: 25px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin-left: -25%;
+    margin-top: -12.5%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+.blur {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.boton {
+    float: right;
+}
+
+.boton-cargar {
+    margin-right: 15px !important;
+}
+
+.boton-popup {
+    margin-left: 10px;
+}

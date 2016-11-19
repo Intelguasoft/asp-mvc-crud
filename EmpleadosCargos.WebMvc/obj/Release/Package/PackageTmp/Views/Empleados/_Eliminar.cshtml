@@ -1,0 +1,22 @@
+﻿@model EmpleadosCargos.Core.Empleado
+
+<script type="text/javascript">
+    $('#close').click(function () {
+        $('#save-box').hide();
+        $('.wrapper').removeClass('blur');
+    });
+</script>
+
+<h2>Eliminar Empleado</h2>
+<h4>@Html.DisplayFor(model => model.Nombre) @Html.DisplayFor(model => model.Apellido) será eliminado/a. ¿Desea continuar?</h4>
+
+<div>
+    @using (Html.BeginForm("Eliminar/" + @Model.EmpleadoID, "Empleados")) {
+        @Html.AntiForgeryToken()
+            
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-danger boton boton-popup" />
+        </div>
+    }
+    <a href="#" onClick="return false;" id="close" class="btn btn-default boton boton-popup">Cancelar</a>
+</div>

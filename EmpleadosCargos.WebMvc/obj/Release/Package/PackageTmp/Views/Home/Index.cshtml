@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div id="panel1">
+    <div id="listado">
+        @Html.Action("Listar", "Empleados")
+    </div>
+</div>
+<div id="panel2">
+    @Html.Action("Cargar", "Empleados")
+    @Html.Action("Cargar", "Cargos")
+</div>
+

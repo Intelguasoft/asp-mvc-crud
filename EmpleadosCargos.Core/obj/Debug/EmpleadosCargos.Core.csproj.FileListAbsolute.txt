@@ -1,0 +1,5 @@
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\bin\Debug\EmpleadosCargos.Core.dll
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\bin\Debug\EmpleadosCargos.Core.pdb
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\obj\Debug\EmpleadosCargos.Core.csprojResolveAssemblyReference.cache
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\obj\Debug\EmpleadosCargos.Core.dll
+C:\Users\HernanMartin\Desktop\DesarrolladorNet\EmpleadosCargos\EmpleadosCargos.Core\obj\Debug\EmpleadosCargos.Core.pdb
